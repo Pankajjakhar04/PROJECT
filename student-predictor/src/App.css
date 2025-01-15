@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+  background: url('https://unsplash.com/photos/h2lDhxCqgPU/download?ixid=M3wxMjA3fDB8MXxjb2xsZWN0aW9ufDl8MjU5NTUyMnx8fHx8Mnx8MTczNjY3Nzk5N3w&force=true') no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+.App-title {
+  color: white; /* Text color set to white */
+  font-size: 36px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow for better visibility */
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-in-out; /* Optional: Add fade-in animation */
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: transparent; /* Allow the background image to show */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #fff; /* White text for better visibility over the background image */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Optional: Add text shadow for better readability */
+}
+
+
+
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: #21a1f1;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.full-page-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.full-video {
+  width: 100%;
+  height: auto;
+}
